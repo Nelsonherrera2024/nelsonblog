@@ -24,7 +24,7 @@
     </div>
     <div class="post-author line">
         <!-- Imagen del autor del artículo -->
-        {% if article.user_id.profile %}
+        {% if article.user_id.profile and article.user_id.profile.photo %}
         <img src="{{ article.user_id.profile.photo.url }}" class="img-author" alt="Autor Post">
         {% else %}
         <img src="{% static 'base/image/Default/default-user.png' %}" class="img-author" alt="Autor Post">

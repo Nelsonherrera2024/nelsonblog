@@ -4,7 +4,6 @@ from django.db.models.signals import post_save
 from django.dispatch import receiver
 from decouple import config
 from django.core.mail import send_mail
-from django.template.base import kwarg_re
 
 
 # Create your models here.
@@ -29,7 +28,7 @@ def email(sender, instance, created, **kwargs):
     if created:
         send_mail(
             'Bienvenido a Nelsonblog un placer saludarte',
-            str('Hola' + instance.full_name + ', usted se a registrado satisfactoriamente en nuestro blog.'
+            str('Hola ' + instance.full_name + ', usted se a registrado satisfactoriamente en nuestro blog.'
                                               '¡Es un placer que seas parte de nuestra familia!'),
             config('EMAIL_HOST_USER'),
             [instance.email]

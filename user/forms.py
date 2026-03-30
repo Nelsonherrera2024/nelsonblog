@@ -42,7 +42,7 @@ class LoginForm(AuthenticationForm):
 
     password = forms.CharField(label=False,
                                help_text=None,
-                               widget=forms.TextInput(attrs={'placeholder':'Contraseña'}))
+                               widget=forms.PasswordInput(attrs={'placeholder':'Contraseña'}))
 
     class Meta:
         model = User

@@ -19,3 +19,12 @@
     padding: 0 10px;
     letter-spacing: 2px;
 }
+
+/* Móvil: menos de 768px */
+@media (max-width: 767px) {
+    .pie a {
+        font-size: 9px;
+        padding: 0 5px;
+        letter-spacing: 1px;
+    }
+}

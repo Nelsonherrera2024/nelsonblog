@@ -32,5 +32,11 @@
     <!-- Incluir footer -->
     {% include 'base/footer.html' %}
 </div>
+<script>
+    document.getElementById('hamburger-btn').addEventListener('click', function() {
+        document.getElementById('nav-menu').classList.toggle('nav-open');
+        this.classList.toggle('active');
+    });
+</script>
 </body>
 </html>

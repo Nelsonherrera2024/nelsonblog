@@ -7,13 +7,19 @@
             <!--Logo-->
             <a href="{% url 'index' %}"><img src="{% static 'base/image/Logo/abc_company.png' %}" alt="Logo"></a>
         </div>
-        <nav class="nav">
+        <!-- Botón hamburguesa para móvil -->
+        <button class="hamburger" id="hamburger-btn" aria-label="Menú">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+        <nav class="nav" id="nav-menu">
             {% if request.user.is_authenticated %}
             <ul class="profile">
 
                 <li>
                     <!-- Imagen del usuario -->
-                    {% if request.user.profile %}
+                    {% if request.user.profile and request.user.profile.photo %}
                     <img src="{{ request.user.profile.photo.url }}" alt="Profile"
                          class="img-profile">
                     {% else %}

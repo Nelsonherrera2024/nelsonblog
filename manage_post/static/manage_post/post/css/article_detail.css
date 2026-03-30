@@ -165,4 +165,71 @@
     }
 }
 
+/* Tablet: 768px - 1023px */
+@media (max-width: 1023px) {
+    .content-post {
+        width: 90%;
+    }
+
+    .content-post .post-title {
+        width: 90%;
+        font-size: 1em;
+    }
+
+    .content-post .post-introduction {
+        width: 90%;
+    }
+
+    .content-post .post-author {
+        width: 50%;
+        margin-left: 5%;
+    }
+
+    .content-post .post-image {
+        width: 70%;
+    }
+
+    .content-post .post-body {
+        width: 90%;
+    }
+
+    hr {
+        width: 95%;
+    }
+}
+
+/* Móvil: menos de 768px */
+@media (max-width: 767px) {
+    .content-post {
+        width: 95%;
+        margin: 5px auto;
+    }
+
+    .content-post .post-title {
+        width: 100%;
+        font-size: 0.9em;
+    }
+
+    .content-post .post-introduction {
+        width: 100%;
+    }
+
+    .content-post .post-author {
+        width: 80%;
+        margin-left: 2%;
+    }
+
+    .content-post .post-image {
+        width: 90%;
+    }
+
+    .content-post .post-body {
+        width: 100%;
+    }
+
+    hr {
+        width: 100%;
+    }
+}
+
 

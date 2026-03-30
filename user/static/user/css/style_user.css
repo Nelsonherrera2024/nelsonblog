@@ -380,3 +380,113 @@ margin-bottom: 5px;
         width: 57%;
     }
 }
+
+/* Tablet: 768px - 1023px */
+@media (max-width: 1023px) {
+    .form-general {
+        width: 60%;
+    }
+
+    .form-content .form-general h2 {
+        font-size: 2.2em;
+    }
+
+    .form-content .form-general.edit-profile {
+        width: 60%;
+    }
+
+    .description-profile {
+        width: 92%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .description-profile .image-profile {
+        width: 25%;
+        height: auto;
+        margin-left: 0;
+    }
+
+    .body-description-profile {
+        width: 85%;
+        text-align: center;
+    }
+
+    .text-center {
+        width: 65%;
+    }
+
+    .text-reset_password {
+        font-size: 2em !important;
+    }
+
+    .form-general.reset-password {
+        width: 50%;
+    }
+}
+
+/* Móvil: menos de 768px */
+@media (max-width: 767px) {
+    .form-general {
+        width: 90%;
+    }
+
+    .form-content .form-general h2 {
+        font-size: 1.8em;
+    }
+
+    .form-content .form-general table {
+        width: 85%;
+    }
+
+    .form-content .form-general .btn-submit {
+        width: 75%;
+    }
+
+    .form-content .form-general.edit-profile {
+        width: 90%;
+    }
+
+    .form-content .form-general.edit-profile ul {
+        width: 80%;
+    }
+
+    .description-profile {
+        width: 95%;
+    }
+
+    .description-profile .image-profile {
+        width: 35%;
+    }
+
+    .body-description-profile {
+        width: 95%;
+    }
+
+    .text-center {
+        width: 85%;
+    }
+
+    .text-reset_password {
+        font-size: 1.6em !important;
+    }
+
+    .form-general.reset-password {
+        width: 85%;
+    }
+
+    .btn-submit.btn-change,
+    .btn-submit.back {
+        width: 80% !important;
+        display: block !important;
+        margin: 5px auto !important;
+    }
+
+    .fields-password {
+        width: 80%;
+    }
+
+    .btn-change-password {
+        width: 80%;
+    }
+}
